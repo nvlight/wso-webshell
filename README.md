@@ -14,15 +14,15 @@
 
 |               | Default                | Personal?                       |
 | ------------- |:----------------------:| -------------------------------:|
-| Password      | __ghost287__           | Edit __line 7__ (__md5 hash__)  |
-| Email         | __test@testmail.com__  | Edit __line 4__                 |
+| Password      | __phpNet573__           | Edit __line 7__ (__md5 hash__)  |
+| Email         | __test@testmail.com__   | Edit __line 4__                 |
 
  ______________
  
 
 ### SCREENSHOT
 
-<img src="/screenshots/wso-welcome.gif" width="90%"></img> <img src="/screenshots/wso-main.png" width="90%"></img><img src="/screenshots/wso-network.png" width="90%"> <img src="/screenshots/wso-bye.gif" width="90%"></img> 
+coming soon
  ______________
  
 
