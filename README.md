@@ -17,6 +17,10 @@
 
  ______________
  
+### USAGE
+
+$wso = new MG_WSO();
+$wso->start();
 
 ### SCREENSHOT
 
