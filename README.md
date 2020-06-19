@@ -12,8 +12,8 @@
 
 |               | Default                | Personal?                       |
 | ------------- |:----------------------:| -------------------------------:|
-| Password      | __phpNet573__           | Edit __line 7__ (__md5 hash__)  |
-| Email         | __test@testmail.com__   | Edit __line 4__                 |
+| Password      | __phpNet573__           | Edit __line 197__ (__md5 hash__)  |
+| Email         | __test@testmail.com__   | Edit __line 236__                 |
 
  ______________
  

