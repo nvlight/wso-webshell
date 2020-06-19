@@ -1,7 +1,6 @@
 
-# WSO php webshell
+# WSO php
 
-- [x] **New Design: most Beautiful**
 - [x] **php 7.x issue resolved**
 - [x] **Easy to use**
 - [x] **Password login protection**
@@ -9,7 +8,6 @@
 - [x] **Managing SQL Databases**
 - [x] **No Tracker**
 - [x] **More useful features...**
-
  ______________
 
 |               | Default                | Personal?                       |
